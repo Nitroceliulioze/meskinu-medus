@@ -1,0 +1,18 @@
+:root {
+  --background-color: rgb(255, 255, 244);
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --text-color: rgb(23, 23, 23);
+  --font-size: 18px;
+  --animation-speed: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  height: 80px;
+  background-color: var(--background-color);
+}/*# sourceMappingURL=index.css.map */
