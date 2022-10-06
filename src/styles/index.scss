@@ -75,7 +75,7 @@ a {
             height: 6px;
             width: 100%;
             background-color: var(--primary-color);
-            // border: 1px solid var(--text-light);
+            border: 1px solid var(--text-light);
             box-shadow: 0 1px 3px var(--shadow-color);
             border-radius: 5px;
             position: absolute;
@@ -119,6 +119,7 @@ a {
     box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.2),
                 3px 0 5px var(--shadow-color);
     animation: getAnimationDuration(.3s) slideInLeft;
+    z-index: 5;
     .sidebar-link {
         display: block;
         padding: 0.5em 1em;
@@ -163,13 +164,57 @@ a {
         }
     }
 }
-
+.footer {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding-top: 3em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    .footer-section{
+        p {
+            opacity: 0.9;
+            margin-bottom: 0.5em;
+        }
+        p.title {
+            opacity: 1;
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-bottom: 1em;
+        }
+        .logo {
+            height: 5em;
+            width: 7.5em;
+        }
+        
+    }
+    
+}
+.email, .social {
+            color: var(--text-color);
+        }
+.copy {
+        text-align: center;
+        font-size: 0.6em;
+        background-color: var(--background-color);
+        padding: 2em;
+}
 
 .container {
-    padding-inline: 15vw;
+    padding-inline: 25vw;
 }
 @import "partials/animations";
 
+@media screen and (max-width: 1280px) {
+    .container {
+        padding-inline: 18vw;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .container {
+        padding-inline: 12vw;
+    }
+}
 @media screen and (max-width: 768px){
     .navbar{
         .nav-links {
@@ -183,5 +228,28 @@ a {
                 display: none;
             }
         }
+    }
+    .container {
+        padding-inline: 6vw;
+    }
+    .footer {
+        grid-template-columns: repeat(4, 1fr);
+        .footer-section:nth-child(1) {
+            grid-column: span 2;
+        }
+        .footer-section:nth-child(2) {
+            grid-column: span 2;
+        }
+        .footer-section:nth-child(3) {
+            grid-column: span 4;
+        }
+    }
+    .copy {
+        text-align: left;
+    }
+}
+@media screen and (max-width: 480px) {
+    .container {
+        padding-inline: 3vw;
     }
 }
