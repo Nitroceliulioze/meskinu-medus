@@ -1,12 +1,12 @@
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import Slider from "./components/Slider";
+import MainPage from "./pages/MainPage";
 
 function App() {
   return (
     <>
     <Navbar />
-    <Slider/> 
+    <MainPage/> 
     <Footer/>
     </>    
   );

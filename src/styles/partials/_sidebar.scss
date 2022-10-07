@@ -1,0 +1,56 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    background-color: var(--background-color);
+    box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.2),
+                3px 0 5px var(--shadow-color);
+    animation: getAnimationDuration(.3s) slideInLeft;
+    z-index: 5;
+    .sidebar-link {
+        display: block;
+        padding: 0.5em 1em;
+        border-left: .4em solid transparent;
+        margin-bottom: 1em;
+        color: var(--text-color);
+        font-size: 1.1em;
+        transform: translateX(-100%);
+        animation: getAnimationDuration(.3s) slideInLeft forwards;
+        @for $i from 1 through 4{
+            &:nth-child(#{$i}){
+                animation-delay: #{$i * 0.1}s;
+            }
+        }
+        &.active{
+            border-color: var(--primary-color);
+        }
+        &:hover {
+            border-color: var(--primary-color);
+            // background-color: rgba(0, 0, 0, 0.05);
+            font-size: 1.2em;
+        }
+        svg {
+            width: 1.5em;
+            margin-right: .5em;
+        }
+    }
+    .logo {
+        height: 5em;
+        width: 14em;
+        margin: 1em 0;
+        padding-left: 2em;
+        padding-right: 4em;
+        border-left: .4em solid transparent;
+        transform: translateX(-100%);
+        animation: getAnimationDuration(.3s) slideInLeft forwards;
+        &.active{
+            border-color: var(--primary-color);
+        }
+        &:hover {
+            border-color: var(--primary-color);
+            height: 5.2em;
+            width: 14.2em;
+        }
+    }
+}

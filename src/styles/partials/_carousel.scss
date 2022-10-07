@@ -1,0 +1,32 @@
+.carousel {
+    margin: 3% 25%;
+    width: 50%;
+    height: 50vh;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 3px 3px 5px var(--shadow-color);
+    .carousel-inner {
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        .left, .right {
+            flex: 7%;
+            height: 100%;
+            background-color: var(--shadow-color);
+            display: grid;
+            place-items: center;
+            color: var(--primary-color);
+            font-size: 1.5em;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .center {
+            flex: 90%;
+            height: 100%;
+        }
+    }
+}

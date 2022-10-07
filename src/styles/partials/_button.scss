@@ -1,0 +1,26 @@
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-block: 1.5em;
+    .button {
+        outline: none;
+        border: none;
+        border-radius: 8px;
+        height: 4em;
+        width: 10em;
+        font-family: var(--font-family);
+        font-size: .8em;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: var(--text-light);
+        text-shadow: 1px 1px 2px var(--shadow-color);
+        background-color: var(--primary-color);       
+        box-shadow: 3px 3px 6px var(--shadow-color);
+        cursor: pointer;
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 3px 3px 10px var(--shadow-color);
+        }
+    }
+}
