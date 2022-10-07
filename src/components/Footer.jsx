@@ -8,7 +8,7 @@ const Footer = () => {
     <div className='footer container'>
         <div className='footer-section'>
             <p className='title'>Meskinumedus.com</p>
-            <p><a href="#!"><img className="logo" src={process.env.PUBLIC_URL+"logo.png"}></img></a></p>
+            <p><a href="#!"><img className="logo" src={process.env.PUBLIC_URL+"logo.png"} alt="logo"/></a></p>
         </div>
         <div className='footer-section'>
             <p className='title'>Sekite naujienas</p>
@@ -21,8 +21,7 @@ const Footer = () => {
             <p>
                 <a className="email" href="mailto:meskinumedus@gmail.com?subject=Medus&body=Sveiki, noriu medaus"><FontAwesomeIcon icon={faEnvelope} /> Parašykite el. laišką </a>
             </p>
-        </div>
-        
+        </div>        
     </div>
     <div>
         <p className="copy">Sukūrė Diana Žukauskienė &copy; 2022</p>

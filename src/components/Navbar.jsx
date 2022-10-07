@@ -28,7 +28,7 @@ function closeSidebar() {
   return (
     <>
     <div className='navbar container'>
-        <a href="#!"><img className={showSidebar ? "logo hidden" : "logo" } src={process.env.PUBLIC_URL+"logo.png"}></img></a>
+        <a href="#!"><img className={showSidebar ? "logo hidden" : "logo" } src={process.env.PUBLIC_URL+"logo.png"} alt="Logo"></img></a>
         <div className='nav-links'>
             { links.map(link => (
                 <a href="#!" key={link.name}>{link.name}</a> 
