@@ -1,13 +1,14 @@
 import { useState} from 'react'
 import Sidebar from './Sidebar'
 import { faList, faBook, faPhone, } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const [showSidebar, setShowSidebar] = useState(false)
     const links = [
         {
             name: "Produktai",
-            path: "/",
+            path: "/produktai",
             icon: faList
         },
         {
@@ -28,14 +29,11 @@ function closeSidebar() {
   return (
     <>
     <div className='navbar container'>
-        <a href="#!"><img className={showSidebar ? "logo hidden" : "logo" } src={process.env.PUBLIC_URL+"logo.png"} alt="Logo"></img></a>
+        <Link to="/"><img className={showSidebar ? "logo hidden" : "logo" } src={process.env.PUBLIC_URL+"logo.png"} alt="Logo"></img></Link>
         <div className='nav-links'>
             { links.map(link => (
-                <a href="#!" key={link.name}>{link.name}</a> 
+                <Link to={link.path} key={link.name}>{link.name}</Link> 
             ))}
-            {/* <a href="#!">Produktai</a>
-            <a href="#!">Apie mus</a>
-            <a href="#!">Kontaktai</a> */}
         </div>
         <div onClick={() => setShowSidebar(!showSidebar)} className={showSidebar ? 'sidebar-btn active' : 'sidebar-btn' }> 
            <div className='bar'></div>

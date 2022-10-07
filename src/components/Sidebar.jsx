@@ -1,14 +1,15 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 
 const Sidebar = ({links, close}) => {
   return (
     <div className='sidebar' onClick={close}>
-        <a href="#!"><img className="logo" src={process.env.PUBLIC_URL+"logo.png"}></img></a>
+        <Link to="/"><img className="logo" src={process.env.PUBLIC_URL+"logo.png"}></img></Link>
         { links.map(link =>  (                
-            <a className="sidebar-link" href="#!" key={link.name}>
+            <Link to={link.path} className="sidebar-link"  key={link.name}>
                 <FontAwesomeIcon icon={link.icon} />
                 {link.name}
-            </a> 
+            </Link> 
         ))}
     </div>
   )
