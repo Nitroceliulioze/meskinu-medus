@@ -1,9 +1,10 @@
 import { useState} from 'react'
 import Sidebar from './Sidebar'
 import { faList, faBook, faPhone, } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
+    const location = useLocation()
     const [showSidebar, setShowSidebar] = useState(false)
     const links = [
         {
@@ -29,10 +30,10 @@ function closeSidebar() {
   return (
     <>
     <div className='navbar container'>
-        <Link to="/"><img className={showSidebar ? "logo hidden" : "logo" } src={process.env.PUBLIC_URL+"logo.png"} alt="Logo"></img></Link>
+        <Link to="/"><img className={showSidebar ? "logo hidden" : "logo" } src={process.env.PUBLIC_URL+"logo.png"} alt="Logo"/></Link>
         <div className='nav-links'>
             { links.map(link => (
-                <Link to={link.path} key={link.name}>{link.name}</Link> 
+                <Link to={link.path}className={location.pathname == link.path? "active" : ""} key={link.name}>{link.name}</Link> 
             ))}
         </div>
         <div onClick={() => setShowSidebar(!showSidebar)} className={showSidebar ? 'sidebar-btn active' : 'sidebar-btn' }> 

@@ -25,28 +25,34 @@ a {
 .container {
     padding-inline: 25vw;
 }
-.quote{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2em;
+.about-h2 {
     margin-block: 2em;
-    .quote-text {
-        font-size: 1.1em;
-        line-height: 1.3;
-        color: var(--text-color);
-        margin-bottom: 0.3em;
-        svg {
-            color: var(--primary-color);
-            font-size: 1.2em;
-            margin-right: 0.2em;
-        }
-    }
-    .quote-auth {
-        color: var(--text-light);
-        float: right;     
-    }
-
 }
+.about-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .about-img-wrapper { 
+        margin:-4em 0;   
+        width: 50%;
+        height: 50vh;
+        overflow: hidden;
+        .seima {
+            height: 100%;
+            width: 100%;
+            object-fit: scale-down;
+            }
+    }
+    .about-text {
+        width: 45%;
+        margin-left: 0.5em;
+        margin-top: -.3em;
+    }
+    .about-text-more {
+        margin-block: 2em;
+    }
+}
+
 
 @import "partials/animations";
 @import "partials/button";
@@ -54,59 +60,8 @@ a {
 @import "partials/footer";
 @import "partials/navbar";
 @import "partials/sidebar";
+@import "partials/quote";
+@import "partials/media";
 
-@media screen and (max-width: 1280px) {
-    .container {
-        padding-inline: 18vw;
-    }
-}
-@media screen and (max-width: 1050px) {
-    .container {
-        padding-inline: 12vw;
-    }
-}
-@media screen and (max-width: 768px){
-    .navbar{
-        .nav-links {
-            display: none;
-        }
-        .sidebar-btn {
-            display: block;
-        }
-        .logo {
-            &.hidden {
-                display: none;
-            }
-        }
-    }
-    .container {
-        padding-inline: 6vw;
-    }
-    .footer {
-        grid-template-columns: repeat(4, 1fr);
-        .footer-section:nth-child(1) {
-            grid-column: span 2;
-        }
-        .footer-section:nth-child(2) {
-            grid-column: span 2;
-        }
-        .footer-section:nth-child(3) {
-            grid-column: span 4;
-        }
-    }
-    .carousel {
-        margin: 3% 15%;
-        width: 70%;
-    }
-    .copy {
-        text-align: left;
-    }
-    .quote{
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-@media screen and (max-width: 480px) {
-    .container {
-        padding-inline: 3vw;
-    }
-}
+
+

@@ -1,8 +1,8 @@
-import React from 'react'
+import ApieMus from '../components/ApieMus'
 
 const ApieMusPage = () => {
   return (
-    <div>ApieMusPage</div>
+    <ApieMus />
   )
 }
 
