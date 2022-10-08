@@ -34,7 +34,7 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.7;    
+    opacity: 0.75;    
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -49,15 +49,19 @@ a {
             color: black;
             margin-bottom: 2em;
             border-radius: 8px;
-            opacity: 1;
+            background-color: var(--primary-color);
+            padding: 0.2em;
+            box-shadow: 0 3px 5px var(--primary-color);
+            opacity: 1;      
         }
         .social {
             color: black;
             margin-bottom: 2em;            
             border-radius: 8px;
             line-height: 2em;
+            padding: 0.5em;
             &:hover{
-            
+            background-color: var(--primary-color);
             box-shadow: 0 3px 5px var(--primary-color);
             }
         }
