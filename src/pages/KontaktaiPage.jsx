@@ -1,8 +1,8 @@
-import React from 'react'
+import Kontaktai from '../components/Kontaktai'
 
 const KontaktaiPage = () => {
   return (
-    <div>KontaktaiPage</div>
+    <Kontaktai/>
   )
 }
 

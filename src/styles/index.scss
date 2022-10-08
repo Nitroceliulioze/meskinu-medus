@@ -25,35 +25,47 @@ a {
 .container {
     padding-inline: 25vw;
 }
-.about-h2 {
-    margin-block: 2em;
-}
-.about-wrapper {
+.contacts-inner {
+    height: 50vh;
+    width: 100%;
+    margin: 2em 0;
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px var(--shadow-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;    
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    .about-img-wrapper { 
-        margin:-4em 0;   
-        width: 50%;
-        height: 50vh;
-        overflow: hidden;
-        .seima {
-            height: 100%;
-            width: 100%;
-            object-fit: scale-down;
+    justify-content: space-around;
+    align-items: center;
+    .contact-section {        
+        color: black;
+        opacity: 1;
+        text-shadow: 3px 3px 5px var(--primary-color);
+        padding-inline: 2.6em;
+        .title{
+            font-size: 1.2em;
+            font-weight: bold;
+            color: black;
+            margin-bottom: 2em;
+            border-radius: 8px;
+            opacity: 1;
+        }
+        .social {
+            color: black;
+            margin-bottom: 2em;            
+            border-radius: 8px;
+            line-height: 2em;
+            &:hover{
+            
+            box-shadow: 0 3px 5px var(--primary-color);
             }
-    }
-    .about-text {
-        width: 45%;
-        margin-left: 0.5em;
-        margin-top: -.3em;
-    }
-    .about-text-more {
-        margin-block: 2em;
-    }
+        }
+        
+    } 
 }
 
-
+@import "partials/about";
 @import "partials/animations";
 @import "partials/button";
 @import "partials/carousel";

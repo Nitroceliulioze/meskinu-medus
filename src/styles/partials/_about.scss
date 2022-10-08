@@ -1,0 +1,27 @@
+.about-h {
+    margin-block: 1em;
+}
+.about-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .about-img-wrapper { 
+        margin:-4em 0;   
+        width: 50%;
+        height: 50vh;
+        overflow: hidden;
+        .seima {
+            height: 100%;
+            width: 100%;
+            object-fit: scale-down;
+            }
+    }
+    .about-text {
+        width: 45%;
+        margin-left: 0.5em;
+        margin-top: -.3em;
+    }
+    .about-text-more {
+        margin-block: 2em;
+    }
+}
