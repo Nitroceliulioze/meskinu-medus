@@ -7,9 +7,11 @@
     --font-size: 18px;
     --animation-speed: 1;
 }
+
 @function getAnimationDuration($duration: number) {
     @return calc($duration * var(--animation-speed));
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -37,6 +39,3 @@ a {
 @import "partials/quote";
 @import "partials/media";
 @import "partials/contacts";
-
-
-

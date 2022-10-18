@@ -36,10 +36,10 @@
                 }
             }
             &.active {
-                color: var(--primary-color);
+                color: var(--text-color);
                 letter-spacing: 2px;
-                // font-weight: bold;
-                text-shadow: 0 2px 3px var(--text-color);
+                font-weight: bold;
+                // text-shadow: 0 2px 3px var(--text-color);
             }
         }
     }
