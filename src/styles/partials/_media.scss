@@ -50,6 +50,9 @@
     .about-img-wrapper {
         width: 100%;
     }
+    .produktai-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 @media screen and (max-width: 480px) {
     .container {

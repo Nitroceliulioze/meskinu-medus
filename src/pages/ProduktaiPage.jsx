@@ -1,8 +1,13 @@
-import React from 'react'
+import Produktai from "../components/Produktai"
 
 const ProduktaiPage = () => {
   return (
-    <div>ProduktaiPage</div>
+    <>
+    <h1 className="product-h1">Produktai</h1>
+    <div className='produktai-container'>
+      <Produktai />
+    </div>
+    </>    
   )
 }
 

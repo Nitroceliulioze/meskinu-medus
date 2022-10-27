@@ -8,7 +8,7 @@ const MainPage = () => {
   return (
     <>
     <Slider/>
-    <Link to="/produktai"><Button/></Link>
+    <Link to="/produktai"><Button data={"Atraskite daugiau"}/></Link>
     <Atsiliepimai/>
     </>
     
