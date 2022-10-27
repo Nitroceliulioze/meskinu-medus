@@ -52,13 +52,16 @@ a {
         flex-wrap: wrap;
         gap: 14px;
         overflow: hidden;
+        
         .box {
             width: 400px;
             min-height: 340px;
             box-shadow: 3px 3px 5px var(--shadow-color);
+            border: 1px solid var(--shadow-color);
             border-radius: 4px;
             padding-bottom: 10px;
             margin: 20px;
+            background-color: var(--background-color);
             overflow: hidden;
             .produkto-img {
                 width: 400px;
@@ -80,7 +83,7 @@ a {
             .produkto-aprasymas {
                 text-align:justify;
                 margin: 1em 1em;
-                min-height: 150px;
+                min-height: 160px;
             }
             .produkto-kaina {
                 font-weight: bold;
