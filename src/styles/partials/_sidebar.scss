@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     height: 100%;
-    width: 250px;
+    width: 300px;
     background-color: var(--background-color);
     box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.2),
                 3px 0 5px var(--shadow-color);
@@ -11,7 +11,7 @@
     .sidebar-link {
         display: block;
         padding: 0.5em 1em;
-        border-left: .4em solid transparent;
+        border-left: .5em solid transparent;
         margin-bottom: 1em;
         color: var(--text-color);
         font-size: 1.1em;
@@ -41,7 +41,7 @@
         margin: 1em 0;
         padding-left: 2em;
         padding-right: 4em;
-        border-left: .4em solid transparent;
+        border-left: .5em solid transparent;
         transform: translateX(-100%);
         animation: getAnimationDuration(.3s) slideInLeft forwards;
         &.active{
