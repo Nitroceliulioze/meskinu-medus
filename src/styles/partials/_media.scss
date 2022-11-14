@@ -1,11 +1,15 @@
 @media screen and (max-width: 1280px) {
-    .container {
+    .container,
+    .produktai-container  {
         padding-inline: 18vw;
     }
 }
 @media screen and (max-width: 1050px) {
-    .container {
+    .container  {
         padding-inline: 12vw;
+    }
+    .produktai-container {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 @media screen and (max-width: 768px){
@@ -22,7 +26,7 @@
             }
         }
     }
-    .container {
+    .container  {
         padding-inline: 6vw;
     }
     .footer {
@@ -52,11 +56,30 @@
     }
     .produktai-container {
         grid-template-columns: repeat(1, 1fr);
-        padding-inline: 6vw;
+        padding-inline: 20vw;
     }
 }
 @media screen and (max-width: 480px) {
     .container {
         padding-inline: 3vw;
     }
+    .produktai-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding-inline: 3vw;
+    }
+}
+@media screen and (max-width: 400px) {
+    .product-wrapper {
+        .produktas {
+            .box {
+                width: 17em;
+                min-height: 15em;
+                .produkto-img {
+                    width: 17em;
+                    height: 17em;
+                    margin-bottom: 1em;       
+                }
+            }
+        }
+    }         
 }

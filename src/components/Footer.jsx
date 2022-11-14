@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
     <div className='footer container'>
         <div className='footer-section'>
             <p className='title'>Meskinumedus.com</p>
-            <p><a href="#!"><img className="logo" src={process.env.PUBLIC_URL+"logo.png"} alt="logo"/></a></p>
+            <p><Link to="/"><img className="logo" src={process.env.PUBLIC_URL+"logo.png"} alt="logo"/></Link></p>
         </div>
         <div className='footer-section'>
             <p className='title'>Sekite naujienas</p>

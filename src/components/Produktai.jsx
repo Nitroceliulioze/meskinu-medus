@@ -3,7 +3,9 @@ import ProductBox from './ProductBox';
 
 const Produktai = () => {
   return (
-    <>{products.map( product => {
+    <>
+      
+      {products.map( product => {
         return (
             <ProductBox data={product}/>
             )

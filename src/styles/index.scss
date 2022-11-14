@@ -30,6 +30,7 @@ a {
 
 .product-h1 {
     display: flex;
+    padding-inline: 25vw;
     justify-content: center;
     margin-block: 2em;
     letter-spacing: 2px;
@@ -40,7 +41,7 @@ a {
 .produktai-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);    
-    padding-inline: 25vw;
+    padding-inline: 23vw;
     
 }
 .product-wrapper {
@@ -51,11 +52,10 @@ a {
         display: flex;
         flex-wrap: wrap;
         gap: 14px;
-        overflow: hidden;
-        
+        overflow: hidden;        
         .box {
-            width: 400px;
-            min-height: 340px;
+            width: 20em;
+            min-height: 17em;
             box-shadow: 3px 3px 5px var(--shadow-color);
             border: 1px solid var(--shadow-color);
             border-radius: 4px;
@@ -63,8 +63,8 @@ a {
             margin: 20px;
             overflow: hidden;
             .produkto-img {
-                width: 400px;
-                height: 400px;
+                width: 20em;
+                height: 20em;
                 margin-bottom: 1em;                
                 & img {
                     width: 100%;
