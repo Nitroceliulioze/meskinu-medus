@@ -1,2 +1,2 @@
-Meskinu madus page
+Meskinu medus page
 React.js Sass
