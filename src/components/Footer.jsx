@@ -25,7 +25,7 @@ const Footer = () => {
         </div>        
     </div>
     <div>
-        <p className="copy">Sukūrė Diana Žukauskienė &copy; 2022</p>
+        <p className="copy">Sukūrė Diana Žukauskienė &copy; 2023</p>
     </div>
     </>    
   )
