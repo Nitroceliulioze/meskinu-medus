@@ -1,5 +1,5 @@
 import DirE from "../images/img1.jpg";
-
+// Neduoda naujos info
 const ApieMus = () => {
   return (
     <div className="container">
